@@ -1,13 +1,53 @@
-# 📬 G1 News Notifier
+# G1 News Notifier
 
-Um projeto Node.js que realiza **web scraping das últimas notícias do G1 (seção Economia)** e envia por **e-mail automaticamente** usando o Nodemailer.
+Projeto Node.js que faz web scraping das notícias do G1 (Economia) e envia por email automaticamente.
 
-Ideal para estudos de automação com Node.js, manipulação de HTML com Cheerio e envio de e-mails via SMTP.
+## Como usar
 
-## 🧩 Para rodar o projeto:
+### 1. Instalar dependências
+```bash
+npm install
+```
 
-**1- npm i**
+### 2. Criar arquivo .env
+```
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=seu-email@gmail.com
+EMAIL_PASS=sua-senha
+```
 
-**2- colocar e-mail do destinatario das noticias do g1, na pasta email**
+### 3. Configurar destinatário
+Edite o arquivo na pasta `email` com o email que vai receber as notícias.
 
-**3- rodar no terminal node app.js**
+### 4. Executar
+```bash
+node index.js
+```
+
+## Tecnologias
+
+- Node.js
+- Cheerio (web scraping)
+- Nodemailer (envio de email)
+
+## Configuração de email
+
+**Gmail:**
+- Use senha de app em vez da senha normal
+- EMAIL_HOST: smtp.gmail.com
+- EMAIL_PORT: 587
+
+**Outlook:**
+- EMAIL_HOST: smtp-mail.outlook.com
+- EMAIL_PORT: 587
+
+## Problemas comuns
+
+**Erro de autenticação Gmail:**
+- Ative autenticação em 2 etapas
+- Crie uma senha de app
+
+**Erro de conexão:**
+- Verifique as credenciais no .env
+- Confirme a porta do seu provedor
