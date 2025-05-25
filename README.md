@@ -7,5 +7,7 @@ Ideal para estudos de automação com Node.js, manipulação de HTML com Cheerio
 ## 🧩 Para rodar o projeto:
 
 **1- npm i**
+
 **2- colocar e-mail do destinatario das noticias do g1, na pasta email**
+
 **3- rodar no terminal node app.js**
