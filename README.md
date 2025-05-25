@@ -2,6 +2,17 @@
 
 Projeto Node.js que faz web scraping das notícias do G1 (Economia) e envia por email automaticamente.
 
+## Estrutura do Projeto
+
+```
+g1-news-email-bot/
+├── email/              # Configurações de email
+├── scraper/            # Scripts de web scraping
+├── index.js            # Arquivo principal
+├── package.json        # Dependências
+└── README.md           # Este arquivo
+```
+
 ## Como usar
 
 ### 1. Instalar dependências
