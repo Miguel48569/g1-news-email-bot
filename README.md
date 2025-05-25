@@ -41,6 +41,7 @@ node index.js
 - Node.js
 - Cheerio (web scraping)
 - Nodemailer (envio de email)
+- axios (requisições HTTP)
 
 ## Configuração de email
 
